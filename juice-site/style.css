@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Madimi One", sans-serif;
+
+}
+*::selection {
+    background: #2b3dda;
+    color: #fff;
+}
+
+html,body
+{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+}
+
+body::-webkit-scrollbar-track {
+    
+    background: #fff2e2;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #310d0e;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+/* common section start */
+h1 {
+    color: #d8550d;
+}
+
+h2 {
+    font-size: 65px;
+    color: #310d0e;
+}
+h5{
+    color: #310d0e;
+}
+
+a{
+    text-decoration: none;
+}
+p {
+    color: #310d0e;
+    margin: 0px;
+}
+
+.my-btn {
+    padding: 8px 25px;
+    border-radius: 25px;
+    border: #310d0e solid 1px;
+    transform: scale(1.0, 1.0);
+}
+
+.my-btn:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 20px 5px #310d0e8b;
+    /* backdrop-filter: blur(10px); */
+}
+
+.solid-btn {
+    color: #fff2e2;
+    background-color: #310d0e;
+}
+
+.border-btn {
+    color: #310d0e;
+}
+
+.home,.shop{
+    padding: 200px 0px;
+}
+
+/* common section end */
+
+/* header sectoin starts */
+header {
+    background-color: #fff2e2;
+
+}
+nav{
+    background-color: #fff2e2;
+    position: fixed;
+    z-index: 100;
+    
+}
+nav>div :nth-child(2) a {
+    text-decoration: none;
+    color: #fff2e2;
+    
+    padding: 10px 20px;
+}
+
+nav>div>div:nth-child(3) a {
+    text-decoration: none;
+}
+
+nav>div :nth-child(2)>a:hover {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+nav>div>div:nth-child(2) {
+    background-color: #310d0e;
+    border-radius: 25px;
+}
+
+.home {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.home>div>div>div>div a {
+    text-decoration: none;
+}
+
+/* -- @ media queary for header---- */
+
+@media only screen and (max-width: 990px) {
+    nav > div > div> a{
+        display: none;
+    }
+
+    .home > div > div > div  > img {
+        height:450px;
+        width:450px;
+    }
+    .home > div > div > div {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 768px){
+h2{
+    font-size: 35px;
+}
+.home > div > div h2{
+    padding-top: 50px;
+}
+.home > div > div > div  > img {
+    height:350px;
+    width:350px;
+    padding-top: 30px;
+}
+.home{
+    padding-top:40px ;
+}
+.home > div > div > div > div{
+    padding-top: 15px;
+}
+@media only screen and (max-width: 425px){
+    .home > div > div > div > div{
+        padding-top: 25px;
+    }
+    .home > div > div > div:nth-child(2) img{
+        height:250px;
+        width:250px;
+        padding-top: 30px; 
+    }
+    .home > div > div > div:nth-child(2) {
+        padding-top: 40px;
+    }
+}
+
+}
+/* ---- home section end----- */
+
+
+/* --- about section start---- */
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+     background-color: #310d0e;
+}
+.sidebar {
+    width: 270px;
+    height: 400px;
+    overflow: auto;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+}
+
+.scroll-bar-items ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.scroll-bar-items ul li {
+    padding: 5px 0;
+}
+
+.scroll-bar {
+    height: 100%;
+}
+
+
+/* --- about section end---- */
+
+/* --- shopshop starts ---- */
+
+.shop > div > div > div:nth-child(2)  {
+    border-radius: 150px;
+    padding-right: 5px;
+}
+.shop > div > div >  div > img{
+    width: 300px;
+    border-radius: 150px;
+    height: 300px;
+    box-shadow: 0px 0px 35px 10px #bdbcbc;
+    transform: scale(1, 1);
+}
+
+.shop > div > div > div > img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+@media only screen and (max-width: 767px){
+   #shop > div > div:nth-child(1) div:nth-child(2) {
+   padding:50px 0px;
+   }
+   #shop > div > div:nth-child(1) div:nth-child(2) img {
+    width: 180px;
+    height: 180px;
+   }
+   #shop > div > div:nth-child(2) div {
+   padding-top:50px;
+   }
+   #shop > div > div:nth-child(2) div img{
+   width: 170px;
+   height: 170px;
+   }
+   
+
+   @media only screen and (max-width: 408px) {
+    .shop > div > div:nth-child(1) div:nth-child(1){
+       /* padding-left: 30px; */
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       }
+   } 
+}
+/* --- shopshop ends ---- */
+
+
+/* --- feaatures section starts --- */
+
+.features > div > div  {
+    background-color: #fff2e2;
+    border-radius: 20px;
+}
+.features > div > div > div > div > input{
+    width: 270px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #310d0e;
+}   
+/* --- feaatures section End --- */
+
+
+
+/* Footer section starT */
+
+.footer{
+    background-color: #fff2e2;
+}
+.footer > div > div  a{
+    color: #310d0e;
+    text-decoration: none;
+}
+
+.footer :last-child p{
+font-size: 13px;
+}
+
+/* Footer section END */
+
